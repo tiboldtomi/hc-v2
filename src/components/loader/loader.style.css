@@ -1,0 +1,40 @@
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: #70C3AD;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader span {
+    position: relative;
+    bottom: -5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 4px;
+    animation: loaderDotAnimation infinite .9s ease-in-out;
+}
+
+.loader span:nth-child(1) { animation-delay: .0s; }
+.loader span:nth-child(2) { animation-delay: .3s; }
+.loader span:nth-child(3) { animation-delay: .6s; }
+
+@keyframes loaderDotAnimation {
+    0% {
+        bottom: -5px;
+    }
+    35% {
+        bottom: 10px;
+    }
+    70% {
+        bottom: -5px;
+    }
+    100% {
+        bottom: -5px;
+    }
+}

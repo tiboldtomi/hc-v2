@@ -1,0 +1,115 @@
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    width: 30vw;
+    height: 75vh;
+    border-radius: 1rem;
+    border: 3px solid #70C3AD;
+    background: #F9FAFA;
+    animation: formAnimation .6s ease;
+    box-shadow: 2px 5px 13px -1px rgba(0,0,0,0.64);
+}
+
+@keyframes formAnimation {
+    0% {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background: #70C3AD;
+        border: 1px solid transparent;
+    }
+    100% {
+        width: 30vw;
+        height: 75vh;
+        border-radius: 1rem;
+        border: 3px solid #70C3AD;
+        background: #F9FAFA;
+    }
+}
+
+.form-content {
+    position: relative;
+    padding: 1rem 3rem;
+    height: 100%;
+    animation: contentAnimation 1s ease;
+}
+
+@keyframes contentAnimation {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-content h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    margin-bottom: 20px;
+}
+
+.form-content__footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 6rem);
+}
+
+.form-content__footer__button {
+    width: 15rem;
+    height: 2.5rem;
+    background: #70C3AD;
+    color: #fff;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.64);
+    transition: .2s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-content__footer__button:active {
+    transform: scaleX(1.1);
+    transition: .2s ease;
+}
+
+.form-content__more-player {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.form-content__more-player:hover p {
+    color: #70C3AD;
+    transition: .2s ease;
+}
+
+.form-content__more-player i {
+    font-size: 2rem;
+    color: #70C3AD;
+}
+
+.form-content__more-player p {
+    margin: 0 5px;
+    transition: .2s ease;
+}

@@ -1,0 +1,81 @@
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30,30,30,.85);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 650px;
+    background: #F9FAFA;
+    border-radius: 1rem;
+    border: 3px solid #70C3AD;
+    box-shadow: 2px 5px 13px -1px rgba(0,0,0,0.64);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+}
+
+.modal-close-button i {
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.modal__header, .modal__footer {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.modal__body {
+    flex-grow: 98;
+    padding: 2rem;
+}
+
+.modal__header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal__footer__button {
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    color: #F9FAFA;
+    cursor: pointer;
+    transition: .2s ease;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.64);
+}
+
+.modal__footer__button.primary {
+    background: #70C3AD;
+}
+
+.modal__footer__button.secondary {
+    background: #666;
+}
+
+.modal__footer__button:active {
+    transform: scaleX(1.1);
+    transition: .2s ease;
+}

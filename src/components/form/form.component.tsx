@@ -2,7 +2,6 @@ import './form.style.css';
 import * as React from 'react';
 import { Loader } from '../loader';
 import { PlayerField } from '../player-field';
-import { TeamsService } from '../../services';
 
 const Form = () => {
 
@@ -10,7 +9,6 @@ const Form = () => {
     const [playerFields, setPlayerFields] = React.useState([<PlayerField key={0} index={0} />, <PlayerField key={1} index={1} />]);
 
     React.useEffect(() => {
-        new TeamsService().getLeagues();
         setTimeout(() => setLoading(false), 1500);
     }, []);
 

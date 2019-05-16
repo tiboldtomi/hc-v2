@@ -42,7 +42,7 @@
 
 .modal__body {
     flex-grow: 98;
-    padding: 2rem;
+    padding: 0 2rem;
 }
 
 .modal__header h1 {

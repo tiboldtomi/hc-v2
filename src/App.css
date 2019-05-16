@@ -16,6 +16,7 @@ input::selection {
 }
 
 html, body {
+    font-size: 16px;
     height: 100vh;
     background: #EDEFF0;
     font-family: 'Varela Round', sans-serif;

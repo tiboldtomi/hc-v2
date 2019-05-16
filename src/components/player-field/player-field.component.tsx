@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './player-field.style.css';
 import { TeamButtons } from '../team-buttons';
+import { IPlayerFieldProps } from './player-field.props';
 
 const PlayerField = ({ index, removable, onRemove }: IPlayerFieldProps) => {
 
@@ -15,11 +16,5 @@ const PlayerField = ({ index, removable, onRemove }: IPlayerFieldProps) => {
         </div>
     );
 };
-
-interface IPlayerFieldProps {
-    index: number;
-    removable?: boolean;
-    onRemove?: (index: number) => void;
-}
 
 export default PlayerField;

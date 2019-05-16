@@ -1,6 +1,8 @@
 import './modal.style.css';
 import * as React from 'react';
 import ReactDOM from 'react-dom';
+import { Dropdown } from '../dropdown';
+import { Leagues } from '../../constants/leagues.const';
 
 const Modal = ({ onClose }: any) => {
 
@@ -11,9 +13,10 @@ const Modal = ({ onClose }: any) => {
             </div>
             <div className="modal__header">
                 <h1>Csapatok</h1>
-                <p>Válassz csapatot!</p>
             </div>
-            <div className="modal__body"></div>
+            <div className="modal__body">
+                <Dropdown placeholder={"Válassz ligát"} items={Leagues} />
+            </div>
             <div className="modal__footer">
                 <div className="modal__footer__button primary">Mentés</div>
                 <div className="modal__footer__button secondary" onClick={() => onClose()}>Mégse</div>
